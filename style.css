@@ -543,7 +543,9 @@ footer {
         margin-bottom: 20px;
 
     }
-
+.best-selling{
+    margin-left: 20px;
+}
 
 
     .navigation {
@@ -576,7 +578,9 @@ footer {
 }
 
 @media (max-width: 480px) {
-
+.con-cards-dashboard {
+    flex-direction: column;
+}
     .con-sales-btn {
         display: flex;
         flex-wrap: wrap;
