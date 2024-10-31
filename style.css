@@ -292,7 +292,8 @@ footer {
     display: table;
     width: 100%;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Adds smooth transition effect */
+    transition: background-color 0.3s ease;
+    /* Adds smooth transition effect */
 
 }
 
@@ -310,7 +311,8 @@ footer {
 }
 
 .con-table tbody tr:hover {
-    background-color: var(--gray); /* Change to your desired hover color */
+    background-color: var(--gray);
+    /* Change to your desired hover color */
 }
 
 .con-table thead tr {
@@ -353,7 +355,7 @@ footer {
     border-radius: 5px;
     justify-content: space-between;
     margin-bottom: 20px;
-    width: 300px;
+
     margin-right: 20px;
 }
 
@@ -369,8 +371,8 @@ footer {
 }
 
 .best-selling .prod-con {
-    height: 55px;
-    width: 55px;
+    height: 50px;
+    width: 50px;
     background-color: #FF8C18;
     border-radius: 10px;
 }
@@ -388,7 +390,7 @@ footer {
 
 }
 
-.con-search-btn button{
+.con-search-btn button {
     border: none;
     padding: 5px 10px;
     background: var(--orange);
@@ -446,7 +448,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.con-sales-btn button{
+.con-sales-btn button {
     border: none;
     padding: 5px 10px;
     background: var(--orange);
@@ -455,7 +457,8 @@ footer {
     height: 30px;
     width: 200px;
 }
-.sales-con-label{
+
+.sales-con-label {
     display: flex;
     flex-direction: column;
     color: var(--white);
@@ -464,7 +467,8 @@ footer {
 }
 
 .con-sales-btn button.active {
-    background-color: var(--light-gray); /* Change to your desired active color */
+    background-color: var(--light-gray);
+    /* Change to your desired active color */
     color: white;
 }
 
@@ -475,7 +479,8 @@ footer {
     width: 100%;
     color: var(--white);
 }
-.export-btn-salesPart button{
+
+.export-btn-salesPart button {
     border: none;
     border-radius: 10px;
     width: 100px;
@@ -484,7 +489,7 @@ footer {
     padding: 5px;
 }
 
-.export-btn-salesPart ion-icon{
+.export-btn-salesPart ion-icon {
     font-weight: 600;
 }
 
@@ -505,12 +510,16 @@ footer {
 
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {
+    .con-sales-btn button {
+        width: 150px;
+    }
+
     .navigation {
         left: -300px;
     }
 
     .navigation.active {
-        width: 300px;
+        width: 200px;
         left: 0;
     }
 
@@ -520,13 +529,41 @@ footer {
     }
 
     .main.active {
-        left: 300px;
+        left: 200px;
     }
-  
+
 
 }
 
 @media (max-width: 768px) {
+    .con-sales-btn {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+    }
+
+
+
+    .navigation {
+        left: -300px;
+    }
+
+    .navigation.active {
+        width: 200px;
+        left: 0;
+    }
+
+    .main {
+        width: 100%;
+        left: 0;
+    }
+
+    .main.active {
+        left: 200px;
+    }
+
     .details {
         flex-direction: column;
 
@@ -535,15 +572,35 @@ footer {
     .recentOrders {
         overflow-x: auto;
     }
-   
+
 }
 
 @media (max-width: 480px) {
+
+    .con-sales-btn {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .con-sales-btn button {
+        flex: 1 1 48%;
+        max-width: 48%;
+    }
+
     .navigation.active {
-    width: 80px;
-}
+        width: 80px;
+    }
 
+    .details {
+        padding-left: 20px;
+    }
 
+    .search {
+        width: 150px;
+    }
 
     .cardHeader h3 {
         font-size: 20px;
