@@ -40,5 +40,36 @@ document.addEventListener("DOMContentLoaded", () => {
             tables[index].style.display = "block";
         });
     });
+
+  // add modal
+    const addModal = document.querySelector('.add-prod-modal');
+    const addButton = document.querySelector('.add-prod-btn');
+
+    addButton.addEventListener('click', () => {
+      addModal.style.display = 'flex';
+    });
+
+    const cancelButton = document.querySelector('.cancel-btn');
+    if(cancelButton){
+      cancelButton.addEventListener('click', () => {
+        addModal.style.display = 'none';
+      });
+    }
+
+
+    // update modal
+    const udModal = document.querySelector('.ud-prod-modal');
+    const udButton = document.querySelector('.upd-prod-btn');
+
+    udButton.addEventListener('click', () => {
+      udModal.style.display = ('flex');
+    });
+
+    const udCancelButton = document.querySelector('.ud-cancel-btn');
+    if(udCancelButton){
+      udCancelButton.addEventListener('click', () => {
+        udModal.style.display = 'none';
+      });
+    }
 });
 
