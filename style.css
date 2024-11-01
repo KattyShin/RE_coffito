@@ -188,6 +188,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    height: auto;
 
 
 }
@@ -219,8 +220,17 @@ footer {
 
 
 /* ============ Table and Cards ============= */
-.table-wrapper {
+.table-wrapper-sales {
     border-radius: 5px;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 50px;
+
+}
+
+.table-wrapper-prod {
+    border-radius: 5px;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -230,6 +240,7 @@ footer {
     flex-direction: column;
     padding: 0 20px;
     min-height: 100%;
+    margin-bottom: 20px;
 }
 
 .con-cards-dashboard {
@@ -270,8 +281,9 @@ footer {
     border-radius: 5px;
     background-color: var(--gray);
     width: 100%;
-    height: 400px;
     overflow: hidden;
+    height: 100%;
+    
 }
 
 .prod-table {
@@ -280,8 +292,10 @@ footer {
     background-color: var(--gray);
     margin-bottom: 20px;
     width: 100%;
-    height: 460px;
+    height: auto;
     overflow: hidden;
+    height: 100%;
+
 }
 
 
@@ -291,6 +305,11 @@ footer {
     border-collapse: collapse;
     background-color: var(--black);
     color: var(--white);
+    height: 100%;
+    margin-bottom: 200px;
+
+
+
 }
 
 .con-table thead,
@@ -317,14 +336,15 @@ footer {
 .prod-table tbody {
     display: block;
     overflow-y: auto;
+
 }
 
 .con-table tbody {
-    height: 275px;
+    height: 100%;
 }
 
 .prod-table tbody {
-    height: 390px;
+    height: 100%;
 }
 
 .con-table tbody tr,
@@ -399,7 +419,7 @@ footer {
     justify-content: space-between;
     margin-bottom: 20px;
     margin-right: 20px;
-    height: 515px;
+    height: auto;
     width: 300px;
 }
 
@@ -618,6 +638,6 @@ footer {
         font-size: 20px;
     }
 
-   
+
 
 }
