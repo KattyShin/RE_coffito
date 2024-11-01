@@ -128,7 +128,7 @@ footer {
 
 /* ===================== Main ===================== */
 .main {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 220px;
     width: calc(100% - 200px);
