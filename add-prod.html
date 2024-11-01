@@ -116,9 +116,32 @@
                             </label>
                         </div>
 
-                        <button>Add Product</button>
+                        <button class="add-prod-btn">Add Product</button>
                     </div>
 
+                    <div class="add-prod-modal">
+                        <h1 class="add-item-lbl">Add Item</h1> <br>
+                        <div class="div-one">
+                            <label class="prod-name-lbl">Product Name: </label>
+                            <input type="text" class="prod-name" name="prod-name"/><br>
+                            <label class="prod-price-lbl">Product Price: </label>
+                            <input type="number" class="prod-price" name="prod-price"/><br>
+                            <label class="prod-category-lbl">Select Category: </label>
+                            <select class="prod-category">
+                                <option value="Coffee">Coffee</option>
+                                <option value="Non-Coffee">Non-Coffee</option>
+                            </select><br>
+                        </div>
+                        <div class="add-prod-modal-btn">
+                            <div class="cancel-btn">
+                                <input type="button" name="cancel-btn" class="cancel-btn" value="Cancel">
+                            </div>
+                            <div class="add-btn">
+                                <input type="button" name="add-btn" class="add-btn" value="Add">
+                            </div>
+                        </div>
+                    </div>
+                    
                     <!-- TABLES -->
                     <div class="prod-table">
 
