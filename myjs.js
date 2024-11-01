@@ -1,75 +1,54 @@
-// add hovered class to selected list item
-let list = document.querySelectorAll(".navigation li");
-
-function activeLink() {
-  list.forEach((item) => {
-    item.classList.remove("hovered");
-  });
-  this.classList.add("hovered");
-}
-
-list.forEach((item) => item.addEventListener("mouseover", activeLink));
-
-// Menu Toggle
-let toggle = document.querySelector(".toggle");
-let navigation = document.querySelector(".navigation");
-let main = document.querySelector(".main");
-
-toggle.onclick = function () {
-  navigation.classList.toggle("active");
-  main.classList.toggle("active");
-};
-
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll(".con-sales-btn button");
-    const tables = document.querySelectorAll(".con-table");
+  const buttons = document.querySelectorAll(".con-sales-btn button");
+  const tables = document.querySelectorAll(".con-table");
 
-    buttons.forEach((button, index) => {
-        button.addEventListener("click", () => {
-            // Remove active class from all buttons
-            buttons.forEach(btn => btn.classList.remove("active"));
-            // Hide all tables
-            tables.forEach(table => table.style.display = "none");
+  buttons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      // Hide all tables
+      tables.forEach((table) => (table.style.display = "none"));
 
-            // Add active class to clicked button
-            button.classList.add("active");
-            // Show the corresponding table
-            tables[index].style.display = "block";
-        });
+      // Add active class to clicked button
+      button.classList.add("active");
+      // Show the corresponding table
+      tables[index].style.display = "block";
     });
+  });
 
-  // add modal
-    const addModal = document.querySelector('.add-prod-modal');
-    const addButton = document.querySelector('.add-prod-btn');
+  const exampleModal = document.getElementById("exampleModal");
+  if (exampleModal) {
+    exampleModal.addEventListener("show.bs.modal", (event) => {
+      // Button that triggered the modal
+      const button = event.relatedTarget;
+      // Extract info from data-bs-* attributes
+      const recipient = button.getAttribute("data-bs-whatever");
+      // If necessary, you could initiate an Ajax request here
+      // and then do the updating in a callback.
 
-    addButton.addEventListener('click', () => {
-      addModal.style.display = 'flex';
+      // Update the modal's content.
+      const modalTitle = exampleModal.querySelector(".modal-title");
+      const modalBodyInput = exampleModal.querySelector(".modal-body input");
+
+      modalTitle.textContent = `New message to ${recipient}`;
+      modalBodyInput.value = recipient;
     });
-
-    const cancelButton = document.querySelector('.cancel-btn');
-    if(cancelButton){
-      cancelButton.addEventListener('click', () => {
-        addModal.style.display = 'none';
-      });
-    }
-
-
-    // update modal
-    const udModal = document.querySelector('.ud-prod-modal');
-    const udButton = document.querySelector('.upd-prod-btn');
-
-    udButton.addEventListener('click', () => {
-      udModal.style.display = ('flex');
-    });
-
-    const udCancelButton = document.querySelector('.ud-cancel-btn');
-    if(udCancelButton){
-      udCancelButton.addEventListener('click', () => {
-        udModal.style.display = 'none';
-      });
-    }
+  }
 });
 
+document
+  .getElementById("saveChangesButton")
+  .addEventListener("click", function () {
+    // Close the Update Product modal
+    var updateProductModal = bootstrap.Modal.getInstance(
+      document.getElementById("exampleModal")
+    );
+    updateProductModal.hide();
+
+    // Show the Confirmation modal
+    var confirmationModal = new bootstrap.Modal(
+      document.getElementById("confirmationModal")
+    );
+    confirmationModal.show();
+  });
