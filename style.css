@@ -518,9 +518,181 @@ footer {
 }
 
 
+/* ========= ADD MODAL ========= */
+.add-prod-modal{
+    position: fixed;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--black1);
+    color: white;
+    width: 26%;
+    height: 55%;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    left: 40%;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
 
+.add-prod-modal-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+}
 
+.add-item-lbl{
+    text-align: center;
+    margin-top: 2%;
 
+}
+
+.div-one{
+    margin-top: 5%;
+    height: 50%;
+    width: auto;
+}
+
+.prod-name, .prod-price{
+    padding-left: 2.5%;
+    margin-bottom: 7%;
+    border-radius: 5px;
+    border: none;
+    width: 58%;
+    height: 16%;
+    background-color: var(--black);
+    color: white;
+    font-size: medium;
+}
+
+.prod-category{
+    margin-bottom: 10%;
+    width: 50%;
+    height: 16%;
+    padding-left: 2.5%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--black);
+    color: white;
+    font-size: medium;
+}
+
+.cancel-btn{
+    width: 35%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    font-size: medium;
+    background-color: var(--orange);
+    text-align: center;
+    margin-right: 5%;
+    color: white;
+}
+
+.add-btn{
+    width: 35%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    font-size: medium;
+    background-color: var(--orange);
+    text-align: center;
+    color: white;
+}
+
+/* ========= UPDATE MODAL ========= */
+.ud-prod-modal{
+    position: fixed;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--black1);
+    color: white;
+    width: 26%;
+    height: 55%;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    left: 40%;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.ud-prod-modal-btn-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+}
+
+.ud-item-lbl{
+    text-align: center;
+}
+
+.ud-div-one{
+    margin-top: 5%;
+    height: 50%;
+    width: auto;
+}
+
+.udprod-name{
+    margin-top: 5%;
+}
+
+.udprod-name, .udprod-price{
+    padding-left: 2.5%;
+    margin-bottom: 7%;
+    border-radius: 5px;
+    border: none;
+    width: 58%;
+    height: 16%;
+    background-color: var(--black);
+    color: white;
+    font-size: medium;
+}
+
+.udprod-category{
+    margin-bottom: 10%;
+    width: 50%;
+    height: 16%;
+    padding-left: 2.5%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--black);
+    color: white;
+    font-size: medium;
+}
+
+.ud-cancel-btn, .ud-cancel-btn-div{
+    width: 35%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    font-size: medium;
+    background-color: var(--orange);
+    text-align: center;
+    margin-right: 5%;
+    color: white;
+}
+
+.ud-btn, .ud-btn-div{
+    width: 35%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    font-size: medium;
+    background-color: var(--orange);
+    text-align: center;
+    color: white;
+}
 
 
 
