@@ -116,9 +116,34 @@
                             </label>
                         </div>
 
-                        <button>Update Product</button>
+                        <button class="upd-prod-btn">Update Item</button>
                     </div>
 
+                    <div class="ud-prod-modal">
+                        <h1 class="ud-item-lbl">Update Item</h1> <br>
+                        <div class="ud-div-one">
+                            <label class="prod-id-lbl">Product ID:</label>
+                            <label class="prod-id">1235</label><br>
+                            <label class="udprod-name-lbl">Product Name: </label>
+                            <input type="text" class="udprod-name" name="prod-name"/><br>
+                            <label class="udprod-price-lbl">Product Price: </label>
+                            <input type="number" class="udprod-price" name="prod-price"/><br>
+                            <label for="category">Select Category: </label>
+                            <select class="udprod-category" id="category">
+                                <option value="Coffee">Coffee</option>
+                                <option value="Non-Coffee">Non-Coffee</option>
+                            </select><br>
+                        </div>
+                        <div class="ud-prod-modal-btn-div">
+                            <div class="ud-cancel-btn-div">
+                                <button class="ud-cancel-btn">Cancel</button>
+                            </div>
+                            <div class="ud-btn-div">
+                                <button class="ud-btn">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <!-- TABLES -->
                     <div class="prod-table">
 
