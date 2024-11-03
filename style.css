@@ -564,9 +564,118 @@ footer {
 }
 
 
-
+/* ========= Add and Update Product Modal ========= */
 .add-btn {
     width: 150px;
+}
+
+.add-btn:hover{
+    background-color: var(--light-gray);
+}
+
+.modal-dialog{
+    margin-top: 12.5%;
+}
+
+.modal-content{
+    background-color: var(--black1);
+    color: white;
+    border:none
+}
+
+.modal-header, .modal-footer{
+    border: none;
+}
+
+.modal-header{
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.modal-body{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-footer{
+    margin-bottom: 3%;
+    justify-content: center;
+
+}
+
+.form-control{
+    background-color: var(--black);
+    color: white;
+    border: none;
+    width: 110%;
+}
+
+.btn-secondary{
+    background-color: var(--orange);
+    border: none;
+    width: 30%;
+    margin-right: 5%;
+}
+
+.btn-primary{
+    background-color: var(--orange);
+    border: none;
+    width: 30%;
+}
+
+.btn-primary:hover{
+    background-color: #777;
+}
+
+.cls-btn{
+    margin-left: 5%;
+}
+
+
+
+/* ========= Account Styling ========= */
+.acc-container h5{
+    margin-left: 12%;
+}
+
+.acc-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 100%;
+}
+
+.acc-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--gray);
+    border: none;
+    border-radius: 15px;
+    margin-left: 12%;
+}
+
+.acc-icon ion-icon{
+    width: 200px;
+    height: 300px;
+    padding-left: 20%;
+}
+
+.acc-info{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 35%
+
+}
+
+.ud-btn{
+    margin-top: 10%;
+}
+
+.update-ad-acc-btn, .update-st-acc-btn{
+    width: 200px;
+    border: none;
 }
 
 
