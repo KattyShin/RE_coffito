@@ -37,18 +37,55 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-document
-  .getElementById("saveChangesButton")
-  .addEventListener("click", function () {
-    // Close the Update Product modal
-    var updateProductModal = bootstrap.Modal.getInstance(
-      document.getElementById("exampleModal")
-    );
-    updateProductModal.hide();
 
-    // Show the Confirmation modal
-    var confirmationModal = new bootstrap.Modal(
-      document.getElementById("confirmationModal")
-    );
-    confirmationModal.show();
-  });
+const saveChangesButton = document.getElementById("saveChangesButton");
+  if(saveChangesButton){  
+    saveChangesButton.addEventListener("click", function () {
+        // Close the Update Product modal
+        var updateProductModal = bootstrap.Modal.getInstance(
+          document.getElementById("exampleModal")
+        );
+        updateProductModal.hide();
+
+        // Show the Confirmation modal
+        var confirmationModal = new bootstrap.Modal(
+          document.getElementById("confirmationModal")
+        );
+        confirmationModal.show();
+      });
+  }  
+
+
+ const stSaveChangesButton = document.getElementById("stSaveChangesButton");
+  if(stSaveChangesButton){
+    stSaveChangesButton.addEventListener("click", function () {
+        // Close the Update Product modal
+        var staffModal = bootstrap.Modal.getInstance(
+          document.getElementById("staffModal")
+        );
+        staffModal.hide();
+
+        // Show the Confirmation modal
+        var confirmationModal = new bootstrap.Modal(
+          document.getElementById("confirmationModal")
+        );
+        confirmationModal.show();
+   });
+  }
+
+  const adminSaveChangesButton = document.getElementById("adminSaveChangesButton");
+  if(adminSaveChangesButton){
+    adminSaveChangesButton.addEventListener("click", function () {
+        // Close the Update Product modal
+        var adminModal = bootstrap.Modal.getInstance(
+          document.getElementById("adminModal")
+        );
+        adminModal.hide();
+
+        // Show the Confirmation modal
+        var confirmationModal = new bootstrap.Modal(
+          document.getElementById("confirmationModal")
+        );
+        confirmationModal.show();
+   });
+  }
