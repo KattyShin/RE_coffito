@@ -19,30 +19,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
   document.getElementById("save-add-prod-btn")?.addEventListener("click", () => {
     bootstrap.Modal.getInstance(document.getElementById("addModal"))?.hide();
     new bootstrap.Modal(document.getElementById("confirmationModal")).show();
   });
   
-
-
-
   document.getElementById("save-updated-prod-btn")?.addEventListener("click", () => {
     bootstrap.Modal.getInstance(document.getElementById("updateModal"))?.hide();
     new bootstrap.Modal(document.getElementById("confirmationModal")).show();
   });
   
 
-
-
   document.getElementById("adminSaveChangesButton")?.addEventListener("click", () => {
     bootstrap.Modal.getInstance(document.getElementById("adminModal"))?.hide();
     new bootstrap.Modal(document.getElementById("confirmationModal")).show();
   });
   
-
-
 
   document.getElementById("stSaveChangesButton")?.addEventListener("click", () => {
     bootstrap.Modal.getInstance(document.getElementById("staffModal"))?.hide();
