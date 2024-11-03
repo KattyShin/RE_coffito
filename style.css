@@ -349,6 +349,11 @@ footer {
     height: 100%;
 }
 
+.prod-table thead tr td,
+.prod-table tbody tr td{
+    width: 15%;
+}
+
 .con-table tbody tr,
 .prod-table tbody tr {
     display: table;
