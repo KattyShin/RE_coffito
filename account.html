@@ -22,7 +22,7 @@
                 <li class="logo-menu">
                     <a href="index.html">
                         <div class="icon">
-                            <img src="CoffitoLogo (40 x 40 px).png" alt="Coffito">
+                            <img src="image/CoffitoLogo (40 x 40 px).png" alt="Coffito">
                         </div>
                         <h5 class="title-shop">CoFFito Cafe</h5>
                     </a>
@@ -100,35 +100,40 @@
                 <div class="top-bar-con">
                     <div class="line"></div>
                     <h4>Manage Accounts</h4>
-                </div> 
+                </div>
             </div> <br>
-            
+
             <div class="acc-container">
                 <!------------- ADMIN -------------->
                 <h5>Admin</h5>
                 <div class="acc-div">
-                    <div class="acc-icon">
-                        <ion-icon name="person-circle-outline"></ion-icon>
+
+                    <div class="acc-user-pass-div">
+                        <div class="acc-icon">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </div>
+                        <div class="acc-info">
+                            <span class="acc-user">
+                                <label for="admin-info">Username: </label>
+                                <label for="admin-info"><strong>admin</strong></label>
+                            </span> <br>
+                            <span class="acc-pass">
+                                <label for="admin-pass">Password: </label>
+                                <label for="admin-pass"><strong>*****1024</strong></label>
+                            </span>
+                        </div>
                     </div>
-                    <div class="acc-info">
-                        <span class="acc-user">
-                            <label for="admin-info">Username: </label>
-                            <label for="admin-info"><strong>admin</strong></label>
-                        </span> <br>
-                        <span class="acc-pass">
-                            <label for="admin-pass">Password: </label>
-                            <label for="admin-pass"><strong>*****1024</strong></label>
-                        </span>
-                    </div>
+                   
                     <div class="ud-btn">
                         <button type="button" class="btn btn-primary update-ad-acc-btn" data-bs-toggle="modal"
-                        data-bs-target="#adminModal">Update</button>
+                            data-bs-target="#adminModal">Update</button>
                     </div> <br> <br>
                 </div> <br>
 
                 <!-- Update Admin Account -->
-                <div class="modal fade" id="adminModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">  
+                <div class="modal fade" id="adminModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4>Manage Admin Account</h4>
@@ -159,32 +164,37 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!------------- STAFF -------------->
                 <h5>Staff</h5>
+              
                 <div class="acc-div">
+                    <div class="acc-user-pass-div">
                     <div class="acc-icon">
                         <ion-icon name="person-circle-outline"></ion-icon>
                     </div>
                     <div class="acc-info">
                         <span class="acc-user">
-                            <label for="admin-info">Username: </label>
-                            <label for="admin-info"><strong>staff</strong></label>
+                            <label for="staff-info">Username: </label>
+                            <label for="staff-info"><strong>staff</strong></label>
                         </span> <br>
                         <span class="acc-pass">
-                            <label for="admin-pass">Password: </label>
-                            <label for="admin-pass"><strong>*****1124</strong></label>
+                            <label for="staff-pass">Password: </label>
+                            <label for="staff-pass"><strong>*****1024</strong></label>
                         </span>
                     </div>
+                    </div>  
                     <div class="ud-btn">
                         <button type="button" class="btn btn-primary update-st-acc-btn" data-bs-toggle="modal"
-                        data-bs-target="#staffModal">Update</button>
-                    </div>
-                </div>
+                            data-bs-target="#staffModal">Update</button>
+                    </div> <br> <br>
+                </div> <br>
+
 
                 <!-- Update Staff Account -->
-                <div class="modal fade" id="staffModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">  
+                <div class="modal fade" id="staffModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered"c>
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4>Manage Staff Account</h4>
@@ -218,8 +228,8 @@
             </div>
 
             <!-- Confirmation -->
-            <div class="modal fade" id="confirmationModal" tabindex="-1"
-                aria-labelledby="confirmationModalLabel" aria-hidden="true">
+            <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">

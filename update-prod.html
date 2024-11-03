@@ -22,7 +22,7 @@
                 <li class="logo-menu">
                     <a href="index.html">
                         <div class="icon">
-                            <img src="CoffitoLogo (40 x 40 px).png" alt="Coffito">
+                            <img src="image/CoffitoLogo (40 x 40 px).png" alt="Coffito">
                         </div>
                         <h5 class="title-shop">CoFFito Cafe</h5>
                     </a>
@@ -101,7 +101,7 @@
                 <div class="top-bar-con">
                     <div class="line">
                     </div>
-                    <h4>Add Product</h4>
+                    <h4>Update Product</h4>
                 </div>
             </div>
 
@@ -121,43 +121,42 @@
                             </label>
                         </div>
 
-                        <!-- BUTTON PARA ADD PRODUCT -->
+                        <!-- BUTTON PARA UPDATE PRODUCT -->
                         <!-- ang kaning update-btn kay di ni class sa bootstap kundi hinimo kuni mao ni gamita para design -->
                         <button type="button" class="btn btn-primary update-btn" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Update Product</button>
+                            data-bs-target="#updateModal">Update Product</button>
 
                     </div>
+
                     <!-- Update Product Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h4>Update Product</h4>
                                 </div>
                                 <div class="modal-body">
                                     <form>
+                                        <!-- Form fields for product update -->
                                         <div class="row align-items-center mb-3">
                                             <label class="col-form-label col-5">Prod ID:</label>
                                             <div class="col-7">
                                                 <span>12342</span>
                                             </div>
                                         </div>
-
                                         <div class="row align-items-center mb-3">
                                             <label class="col-form-label col-5">Product Name:</label>
                                             <div class="col-7">
-                                                <input type="text" class="form-control" id="">
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
-
                                         <div class="row align-items-center mb-3">
                                             <label class="col-form-label col-5">Prod Price:</label>
                                             <div class="col-7">
-                                                <input type="text" class="form-control" id="">
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
-
                                         <div class="row align-items-center mb-3">
                                             <label class="col-form-label col-5">Select Category:</label>
                                             <div class="col-7">
@@ -172,18 +171,17 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-primary" id="saveChangesButton">Save
+                                    <button type="button" class="btn btn-primary" id="save-updated-prod-btn">Save
                                         Changes</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-
                     <!-- Confirmation Modal -->
                     <div class="modal fade" id="confirmationModal" tabindex="-1"
                         aria-labelledby="confirmationModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5" id="confirmationModalLabel">Confirmation</h1>
@@ -192,13 +190,12 @@
                                     Your changes have been saved successfully!
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary cls-btn"
+                                    <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
 
 
 
