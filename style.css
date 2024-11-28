@@ -230,6 +230,11 @@ footer {
 
 }
 
+.table-wrapper-sales thead tr td,
+.table-wrapper-sales tbody tr td{
+    width: 15%;
+}
+
 .table-wrapper-prod {
     border-radius: 5px;
     height: 100%;
@@ -368,6 +373,11 @@ footer {
 
 .prod-table tbody {
     height: 100%;
+}
+
+.prod-table thead tr td,
+.prod-table tbody tr td{
+    width: 15%;
 }
 
 .con-table tbody tr,
